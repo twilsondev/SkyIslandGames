@@ -1,37 +1,193 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
-for details on configuring this project to bundle and minify static web assets. */
+﻿/*Sky Island Games CSS*/
+
+
+
+/*HTML*/
+
 body {
-    padding-top: 50px;
-    padding-bottom: 20px;
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+
+
+:focus {
+    outline: none;
 }
 
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
+
+
+::-moz-focus-inner {
+    border: 0;
 }
 
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
-    width: 100%;
+
+
+/*Navigation*/
+
+.Name {
+    display: none;
 }
 
-/* QR code generator */
-#qrCode {
-    margin: 15px;
+
+
+.CompanyLogo {
+    margin-top: -15px;
+    width: 40%;
 }
 
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-    /* Hide captions */
-    .carousel-caption {
-        display: none;
+
+
+.twitter, .facebook, .youtube {
+    font-size: 35px !important;
+    margin-top: -8px !important;
+    color: rgb(85,172,238);
+}
+
+
+
+.facebook {
+    color: rgb(72,98,168);
+}
+
+
+
+.youtube {
+    color: rgb(230,33,23);
+}
+
+
+
+/*TOP*/
+
+.top {
+    text-align: center;
+}
+
+
+
+.CompanyLogoMobile {
+    display: none;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+
+/*FEATURED*/
+
+.featured {
+    text-align: center;
+    min-height: 200px;
+}
+
+
+
+.aboutGame {
+    border-radius: 5px;
+    text-align: left;
+    padding: 15px;
+}
+
+
+
+/*MEDIA*/
+
+.media {
+    text-align: center;
+    background-color: rgb(41,41,41);
+}
+
+
+
+    .media .row .col-sm-4 {
+        padding: 10px;
+    }
+
+.mediaImage {
+    width: 250px;
+}
+
+/*BOTTOM*/
+
+.bottom {
+    text-align: center;
+    background-color: #404040;
+    color: white !important;
+    box-shadow: 0px 500px 0px 500px #404040;
+    /*height: 50px;*/
+}
+
+
+
+    .bottom a {
+        color: #777;
+    }
+
+
+
+
+
+/*Bootstrap Override*/
+
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+
+
+.navbar {
+    min-height: 150px;
+}
+
+
+
+.teamHeader {
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    padding: 15px;
+}
+
+.teamBody {
+    padding: 15px;
+}
+
+
+
+/*Mobile*/
+
+@media only screen and (max-width: 767px) {
+
+    .Name {
+        display: block;
+    }
+
+
+
+    .CompanyLogo {
+        display: none !important;
+    }
+
+
+
+    .navbar {
+        min-height: 59px;
+    }
+
+
+
+    .navbar-default {
+        background-color: #2e2e2e;
+        border-color: #1d1d1d;
+    }
+
+
+
+        .navbar-default .-collapse, .navbar-default .navbar-form {
+            border-color: none;
+        }
+
+
+
+    .CompanyLogoMobile {
+        display: block;
     }
 }
