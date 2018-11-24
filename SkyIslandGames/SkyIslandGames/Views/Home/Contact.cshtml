@@ -1,7 +1,157 @@
-﻿
-@{
-    ViewData["Title"] = "Contact";
-}
+﻿<section class="top">
 
-<h2>Contact</h2>
+<div class="container">
 
+    <div class="row">
+
+        <div class="col-sm-12">
+
+            <a class="" href="http://skyislandgames.com/index.php">
+
+                <img class="CompanyLogoMobile" src="../images/WebsiteLogo.png" alt="Sky Island Games" />
+
+            </a>
+
+            <h2>Contact Us</h2>
+
+
+
+        </div>
+
+    </div>
+
+    <hr />
+
+</div>
+
+</section>
+
+
+
+<style>
+
+    #testerform td {
+        padding: 4px 4px;
+        text-align: center !important;
+    }
+
+
+
+    .emailResults {
+        color: green;
+        font-size: 16px;
+        font-weight: bold;
+    }
+</style>
+
+<section class="top">
+
+    <div class="container" style="margin-bottom:15px">
+
+        <div class="row" style="padding:15px">
+
+            <div class="col-sm-6" style="text-align:left !important;background-color:rgba(0,0,0,.05); border-radius:4px;height:355px">
+
+                <h3 style="font-weight:bold bold; padding-top:10px">
+
+                    Questions, Comments, Random Musings.
+
+                    <br />Love to hear from you!!
+
+                </h3>
+
+                <br />
+
+                <p style="font-size:16px">Please fill out all of the fields to contact us - I read every email.</p>
+
+                <br />
+
+                <p style="font-size:16px">
+
+                    Always looking for people to
+
+                    <b>collaborate</b> with or bounce ideas around.  If you're interested contact
+
+                    <a href="https://twitter.com/skyisland_games" target="_blank">@@skyisland_games</a> on Twitter.
+
+                </p>
+
+            </div>
+
+            <div class="col-sm-6">
+                <form action="/Home/SubmitContactUs">
+                    <table id="testerform" style="width:100%;">
+
+                        <tr>
+
+                            <td>
+
+                                <label>Name:</label>
+
+                                <input type="text" class="form-control" id="txtName" placeholder="Name" />
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+
+                                <label>Email:</label>
+
+                                <input type="text" class="form-control" id="txtEmail" placeholder="Email" />
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+
+                                <label>Message:</label>
+
+                                <textarea maxlength="1000" style="height:150px" placeholder="Message" id="txtfeedback" class="form-control"></textarea>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+
+                                <input type="submit" value="Submit" id="submitFeedback" style="width:150px" class="btn btn-primary" />
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+
+                                <p class="emailResults"></p>
+
+                            </td>
+
+                        </tr>
+
+                    </table>
+                </form>
+            </div>
+
+
+
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<div class="clear-fix"></div>
